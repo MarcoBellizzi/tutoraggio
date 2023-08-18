@@ -60,7 +60,7 @@ print(lista)
 ### FOR ###
 
 
-# il costrutto for serve per scorrere una lista e ripetere del codice per ogni elemento nella lista
+# il costrutto for serve per scorrere una lista e ripetere del codice per ogni elemento nella lista.
 # il codice che va ripetuto va messo con un tab di spazio dopo il for
 lista = [1, 3, 4, 7]
 for elemento in lista:

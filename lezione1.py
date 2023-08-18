@@ -20,6 +20,8 @@ print(x)
 
 # il contenuto delle variabili può variare durante l'esecuzione del programma.
 # aggiorniamo il contenuto della variabile x
+x = 3
+print(x)
 x = 7
 print(x)
 
@@ -58,7 +60,18 @@ x += 1
 print(x)
 
 # operatore decremento (sottrae un valore ad una variabile)
+x = 4
 x -= 2
+print(x)
+
+# operatore moltiplicazione e assegnamento (moltiplica una variabile per un valore)
+x = 2
+x *= 3
+print(x)
+
+# operatore divisione e assegnamento (divide una variabile per un valore)
+x = 9
+x /= 3
 print(x)
 
 
@@ -76,21 +89,24 @@ print(x)
 
 # il codice che va eseguito all'interno della funzione va messo con un tab di spazio dopo la sua dichiarazione
 
-# creazione di una funzione che ha come parametri due numeri e che ne restituisce la somma
+# creazione di una funzione senza parametri e senza valore di ritorno
+def saluta():
+    print("questa stampa viene dalla funzione")
+    print("ciao marco")
+
+# chiamata alla funzione
+saluta()
+
+# creazione di una funzione con una parametro e senza valore di ritorno
+def stampa_numero_al_quadrato(x):
+    print(x * x)
+
+stampa_numero_al_quadrato(4)
+
+# creazione di una funzione che ha come parametri due numeri e che ha come valore di ritorno la loro somma
 def somma_due_numeri(primo_numero, secondo_numero):
     x = primo_numero + secondo_numero
     return x
 
-# chiamiamo la funzione e salviamo il suo valore di ritorno in una varibile x
 x = somma_due_numeri(5, 7)
 print(x)
-
-# chiamiamo la funzione e stampiamo direttamente il suo valore di ritorno
-print(somma_due_numeri(12, 8))
-
-# creazione di una funzione senza valore di ritorno
-def stampa_numero_al_quadrato(x):
-    print(x * x)
-
-# chiamiamo la funzione senza valore di ritorno
-stampa_numero_al_quadrato(4)

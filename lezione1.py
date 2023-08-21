@@ -18,6 +18,10 @@ x = 5
 # in questo caso stampiamo il contenuto della variabile x
 print(x)
 
+# il comando (o funzione) input() serve per leggere dal terminale qualcosa.
+x = input()
+print(x)
+
 # il contenuto delle variabili può variare durante l'esecuzione del programma.
 # aggiorniamo il contenuto della variabile x
 x = 3

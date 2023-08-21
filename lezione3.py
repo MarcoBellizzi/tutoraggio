@@ -6,13 +6,14 @@
 lista = []
 
 # creazione di una lista con elementi
-lista = [1, 2, 3, 4]
+lista = [1, 7, 2, 4]
 
 # gli elementi di una lista possono avere tipo diverso o anche essere altre liste
 lista = [1, False, [3, 4]]
 
 # per accedere ad un elemento della lista si usano le parentesi quadre 
 # con il relativo indice all'interno (partendo da 0)
+lista = [2, 4, 1, 3]
 primo_elemento = lista[0]
 print(primo_elemento)
 

@@ -1,87 +1,87 @@
 ### BOOLEANE ###
 
 # oltre ai numeri, le variabili possono assumere valori booleani.
-# una booleana è una variabile che ammette due possibili valori: vero o falso
+# una booleana è una variabile che ammette due possibili valori: vero o falso.
 
-# x è una varibile booleana vera
+# x è una varibile booleana vera.
 x = True
 
-# x è una varibile booleana falsa
+# x è una varibile booleana falsa.
 x = False
 
 ### CONNETTORI ###
 
-# i connettori mettono in relazione due o più booleane, al fine di stabilire il valore finale
+# i connettori mettono in relazione due o più booleane, al fine di stabilire il valore finale.
 
-# il connettore and restituisce vero se tutte le varibili sono vere, falso altrimenti
+# il connettore and restituisce vero se tutte le varibili sono vere, falso altrimenti.
 x = True and True
 print(x)
 
 x = True and False and True
 print(x)
 
-# il connettore or restituisce vero se c'è almeno una varibile vera
+# il connettore or restituisce vero se c'è almeno una varibile vera.
 x = True
 y = False
 z = x or y
 print(z)
 
-# i connettori possono essere combinati usando le parentesi tonde
+# i connettori possono essere combinati usando le parentesi tonde.
 print((x or y) and z)
 
 
 ### OPERATORI DI CONFRONTO ###
 
 
-# gli operatori di confronto confrontano due varibili e restituiscono un valore booleano
+# gli operatori di confronto confrontano due varibili e restituiscono un valore booleano.
 
-# l'operatore == restituisce vero se le due varibili sono uguali
+# l'operatore == restituisce vero se le due varibili sono uguali.
 x = 5 == 7
 print(x)
 
-# l'operatore != restituisce vero se le due varibili sono diverse
+# l'operatore != restituisce vero se le due varibili sono diverse.
 print(5 != 3)
 
-# l'operatore > restituisce vero se la prima è maggiore della seconda
+# l'operatore > restituisce vero se la prima è maggiore della seconda.
 print(5 > 3)
 
-# l'operatore >= restituisce vero se la prima è maggiore o uguale della seconda
+# l'operatore >= restituisce vero se la prima è maggiore o uguale della seconda.
 print(5 >= 5)
 
-# l'operatore < restituisce vero se la prima è minore della seconda
+# l'operatore < restituisce vero se la prima è minore della seconda.
 print(5 < 3)
 
-# l'operatore <= restituisce vero se la prima è minore o uguale della seconda
+# l'operatore <= restituisce vero se la prima è minore o uguale della seconda.
 print(5 <= 7)
 
 
 ### COSTRUTTI ###
 
 
-# i costrutti sono degli strumenti per verificare il valore di verità di una booleana
+# i costrutti sono degli strumenti per verificare il valore di verità di una booleana.
 
 # il costrutto if serve per eseguire del codice solo se il valore booleano presente all'interno è vero.
-# il codice che va eseguito se la condizione è vera va messo con un tab di spazio dopo l'if
+# il codice che va eseguito se la condizione è vera va messo con un tab di spazio dopo l'if.
 if 5 > 3:
     print("5 è maggiore di 3")
 
 if 8 < 2:
     print("8 minore di 2")
 
-# il costrutto else serve per eseguire del codice qualora il valore presente nell'if fosse falso
+# il costrutto else serve per eseguire del codice qualora il valore presente nell'if fosse falso.
 if 5 <= 2:
     print("5 è minore o uguale di 2")
 else:
     print("5 è maggiore di 2")
 
-# il costrutto elif serve per porsi un ulteriore domanda qualora il valore presente nell'if fosse falso
+# il costrutto elif serve per porsi un ulteriore domanda qualora il valore presente nell'if fosse falso.
 x = 5
 
 if x < 3:
     print("x è minore di 3")
-elif x >= 3 and x < 7:
+elif x < 7:
     print("x è compresa tra 3 e 7")
-elif x >= 7 and x < 10:
+elif x < 10:
     print("x è compresa tra 7 e 10")
 else:
     print("x è maggiore di 10")

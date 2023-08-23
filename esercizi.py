@@ -60,3 +60,32 @@ def verifica_palindroma(parola):
 
 
 ### ESERCIZI DIFFICILI ###
+
+# scrivere una funzione che ricevuta una matrice la stampi al contrario (da sotto a sopra e da destra a sinistra)
+def stampa_matrice_al_contrario(matrice):
+    for i in range(len(matrice), -1, -1):
+        for j in range(len(matrice[i]), -1, -1):
+            print(matrice[i][j], end=" ")
+        print()
+
+# scrivere una funzione che ricuvuti due parametri x e y crei e ritorni una matrice x X y con valori crescenti da 0
+def crea_matrice(x, y):
+    matrice = []
+    cont = 0
+    for i in range(x):
+        matrice.append([])
+        for _ in range(y):
+            matrice[i].append(cont)
+            cont += 1
+    return matrice
+
+
+# scrivere una funzione che ricevuta una matrice la stampi a scacchiera
+def stampa_matrice_a_scacchiera(matrice):
+    for i in range(len(matrice)):
+        for j in range(len(matrice[i])):
+            if (i + j) % 2 == 0:
+                print(matrice[i][j], end=" ")
+            else:
+                print("  ", end=" ")
+        print()

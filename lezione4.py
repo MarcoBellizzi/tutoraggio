@@ -1,55 +1,52 @@
-### MATRICI ###
+### STRINGHE ###
 
 
-# le matrici concettualmente rappresentano delle tabelle, formate da righe e colonne.
-# più tecnicamente in python una matrice consiste in una lista di liste.
-# c'è una lista principale che racchiude altre liste, ognuna della quali rappresenta una riga
+# le stringhe sono semplicemente delle variabili il cui contenuto è una sequenza di caratteri.
+x = "abracadabra"
 
-# creazione di una matrice 3 x 3
-matrice = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# possiamo vedere una stringa come una lista di caratteri (non si possono usare i metodi visti prima però).
 
-# prendiamo la prima riga
-prima_riga = matrice[0]
-print(prima_riga)
+# usare la funzione len per sapere la dimensione della stringa.
+print(len(x))
 
-# per capire BENE come scorrere le matrici osserviamo la differenza tra questi due
-# modi di scorrere una lista
+# scorrere una stringa.
+for carattere in x:
+    print(carattere)
 
-lista = [1, 2, 3, 4, 5]
+# accedere ad un singolo carattere.
+quarto_carattere = x[3]
+print(quarto_carattere)
 
-# in questo caso cicliamo direttamente sugli elementi della lista.
-# la variabile elemento contiene direttamente gli elementi della lista
-for elemento in lista:
-    print(elemento)
+# usare gli slicer.
+sottostringa = x[2:6]
+print(sottostringa)
 
-# in quest'altro caso usiamo le funzioni range() e len() per creare
-# un insieme di indici degli elementi della lista
-for indice in range(len(lista)):
-    print(lista[indice])
+# con le stringhe possiamo usare gli operatori di confronto visti precedentemente con i numeri.
+# gli operatori == e != ritornano vero o falso a secondo se le due stringhe sono uguali o diverse
+# mentre gli operatori >, >=, <, <= rispettano l'ordine alfabetico.
+print("java" != "python")
+print("albero" < "balena")
 
-# possiamo quindi usare quest'altro approccio per scorrere gli elementi di una matrice
-for i in range(len(matrice)):
-    for j in range(len(matrice[i])):
-        print(matrice[i][j])
+# possiamo usare l'operatore + per concatenare due stringhe.
+x = "questa è u" + "na stringa conc" + "atenata"
+print(x)
 
-# notiamo come l'indice i scorre sulle righe della matrice mentre l'indice j
-# scorre sulle colonne di ogni riga, dunque l'elemento matrice[i][j] rappresenta
-# la cella alla riga i e alla colonna j
+# possiamo usare l'operatore * per duplicare una stringa più volte.
+x = "ciao " * 3
+print(x)
 
-# creazione di una matrice 4 x 4 con celle uguali X
-matrice = []
-for i in range(4):
-    matrice.append([])
-    for j in range(4):
-        matrice[i].append("X")
+# il metodo split() serve per dividere una stringa in parole e metterle in una lista.
+x = "ciao mi chiamo marco"
+parole = x.split()
+print(parole)
 
-# stampa della matrice in formato tabella
-# il parametro end=" " nella funzione print serve per non andare a capo dopo una stampa
-for i in range(len(matrice)):
-    for j in range(len(matrice[i])):
-        print(matrice[i][j], end=" ")
-    print("")
+# i numeri possono essere trasformati in stringhe e viceversa.
+x = 5
+x = str(x)
+x += "1"
+print(x)
+
+x = "5"
+x = int(x)
+x += 1
+print(x)

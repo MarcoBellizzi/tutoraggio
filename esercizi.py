@@ -1,5 +1,6 @@
 ### ESERCIZI BASE - LEZIONI 1 E 2 ###
 
+
 # scrivere una funzione che ricevuti due numeri ritorni il maggiore
 def massimo_tra_due_numeri(x, y):
     if x > y:
@@ -59,7 +60,17 @@ def verifica_palindroma(parola):
     return palidroma
 
 
+# scrivere una funzione che ricevute due parole verifichi se tutte le lettere nella prima compaiono nella seconda
+def funzione(parola1, parola2):
+    condizione = False
+    for i in range(len(parola1)):
+        if i in parola2:
+            condizione = True
+    return condizione
+
+
 ### ESERCIZI DIFFICILI ###
+
 
 # scrivere una funzione che ricevuta una matrice la stampi al contrario (da sotto a sopra e da destra a sinistra)
 def stampa_matrice_al_contrario(matrice):
@@ -67,6 +78,7 @@ def stampa_matrice_al_contrario(matrice):
         for j in range(len(matrice[i]), -1, -1):
             print(matrice[i][j], end=" ")
         print()
+
 
 # scrivere una funzione che ricuvuti due parametri x e y crei e ritorni una matrice x X y con valori crescenti da 0
 def crea_matrice(x, y):
@@ -89,3 +101,14 @@ def stampa_matrice_a_scacchiera(matrice):
             else:
                 print("  ", end=" ")
         print()
+
+
+# scrivere una funzione che ricevuta una matrice verifichi se in ogni riga ci sono tutti elementi diversi
+def elementi_diversi_in_righe(matrice):
+    condizione = True
+    for i in range(len(matrice)):
+        for x in range(len(matrice[i])):
+            for y in range(len(matrice[i])):
+                if x != y and matrice[i][x] == matrice[i][y]:
+                    condizione = False
+    return condizione

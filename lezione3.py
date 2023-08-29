@@ -73,7 +73,8 @@ for elemento in lista:
 for elemento in range(10):
     print(elemento)
 
-# creazione di numeri interi consecutivi a partire da un valore specificato fino ad un altro valore specificato.
+# creazione di numeri interi consecutivi a partire da un valore specificato fino ad un altro
+# valore specificato.
 for elemento in range(5, 10):
     print(elemento)
 
@@ -103,7 +104,7 @@ print(lista)
 
 # la key word break serve per uscire immediatamente da un ciclo (sia for che while).
 
-# stampiamo i numeri presenti in una lista finche non troviamo il numero -1
+# stampiamo i numeri presenti in una lista finche non troviamo il numero -1.
 lista = [1, 2, 3, -1, 4, 5]
 for elemento in lista:
     if elemento == -1:

@@ -1,4 +1,4 @@
-# le linee che iniziano con un # sono dei commenti, vengono ignorate dal computer
+# le linee che iniziano con un # sono dei commenti, vengono ignorate dal computer.
 
 # per eseguire un file python bisogna installare python sul prorpio computer.
 # consiglio poi di installare il programma Visual Studio Code per creare ed eseguire i file.
@@ -85,7 +85,7 @@ print(x)
 
 
 # creare una funzione in python è un modo per racchiudere un blocco di codice
-# da poter chiamare ovunque, similmente alla funzione print()
+# da poter chiamare ovunque, similmente alla funzione print().
 
 # una funzione può (ma non obbligatoriamente) avere un insieme di parametri che riceve come input,
 # esse sono delle varibili che la funzione riceve dall'esterno e che può usare al proprio interno. 
@@ -93,7 +93,8 @@ print(x)
 # una funzione può (ma non obbligatoriamente) avere un valore di ritorno, ovvero un valore
 # che restituisce in output all'esterno dopo aver eseguito il blocco di codice all'interno.
 
-# il codice che va eseguito all'interno della funzione va messo con un tab di spazio dopo la sua dichiarazione
+# il codice che va eseguito all'interno della funzione va messo con un tab di spazio dopo 
+# la sua dichiarazione
 
 # creazione di una funzione senza parametri e senza valore di ritorno.
 def saluta():

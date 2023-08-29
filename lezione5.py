@@ -2,7 +2,7 @@
 
 
 # le matrici concettualmente rappresentano delle tabelle, formate da righe e colonne.
-# più tecnicamente in python una matrice consiste in una lista di liste :
+# più tecnicamente in python una matrice consiste in una lista di liste:
 # c'è una lista principale che racchiude altre liste, ognuna della quali rappresenta una riga.
 
 # creazione di una matrice 3 x 3.

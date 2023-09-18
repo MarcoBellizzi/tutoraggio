@@ -87,6 +87,11 @@ for primo_elemento in range(3):
     for secondo_elemento in range(3):
         print(primo_elemento * secondo_elemento)
 
+# possiamo usare il len e il range per scorrere la lista attraverso gli indici
+lista = [1, 3, 4, 7]
+for i in range(len(lista)):
+    print("l' elemento in posizione", i, "è uguale a", lista[i])
+
 
 ### WHILE ###
 

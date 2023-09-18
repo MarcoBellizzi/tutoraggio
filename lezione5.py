@@ -47,9 +47,10 @@ for i in range(len(matrice)):
 # creazione di una matrice 4 x 4 con celle uguali X.
 matrice = []
 for i in range(4):
-    matrice.append([])
+    riga = []
     for j in range(4):
-        matrice[i].append("X")
+        riga.append("X")
+    matrice.append(riga)
 
 # stampa della matrice in formato tabella.
 # il parametro end=" " nella funzione print serve per non andare a capo dopo una stampa.

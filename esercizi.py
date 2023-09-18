@@ -94,27 +94,21 @@ def somma_vicini_pari(lista):
 
 # scrivere una funzione che ricevuta una parola ritorni la lettera più frequente
 def lettera_più_frequente(parola):
-    lista_cont_lettere = []
-    
+    cont_max = 0
+    char_max = ""
     for carattere in parola:
         cont = 0
-        for c in parola:
-            if carattere == c:
+        for carattere2 in parola:
+            if carattere == carattere2:
                 cont += 1
-        lista_cont_lettere.append(cont)
-
-    char_max = parola[0]
-    cont_max = lista_cont_lettere[0]
-
-    for i in range(1, len(parola)):
-        if lista_cont_lettere[i] > cont_max:
-            cont_max = lista_cont_lettere[i]
-            char_max = parola[i]
+        if cont > cont_max:
+            cont_max = cont
+            char_max = carattere
 
     return char_max
 
 
-### ESERCIZI DIFFICILI - LEZIONE 5 ###
+### ESERCIZI DIFFICILI - LEZIONE 5 e 6 ###
 
 
 # scrivere una funzione che ricevuta una matrice la stampi al contrario (da sotto 
@@ -132,10 +126,11 @@ def crea_matrice(righe, colonne):
     matrice = []
     cont = 0
     for i in range(righe):
-        matrice.append([])
-        for _ in range(colonne):
-            matrice[i].append(cont)
+        riga = []
+        for j in range(colonne):
+            riga.append(cont)
             cont += 1
+        matrice.append(riga)
     return matrice
 
 
@@ -160,3 +155,18 @@ def elementi_diversi_in_righe(matrice):
                 if x != y and matrice[i][x] == matrice[i][y]:
                     condizione = False
     return condizione
+
+
+# scrivere una funzione ricorsiva che verifichi se in una matrice ci sono solo elementi positivi
+def condizione_ricorsiva(matrice, i, j):
+    # caso base - positivo (se ho visitato tutte le celle)
+    if i == len(matrice):
+        return True
+    # caso base - negativo (trovo una cella con valore negativo)
+    if matrice[i][j] < 0:
+        return False
+    # caso ricorsivo - se sono sull'ultima colonna mi sposto una riga in basso e torno sulla prima colonna
+    if j == len(matrice[0]) -1:
+        return condizione_ricorsiva(matrice, i+1, 0)
+    # caso ricorsivo - se non sono sull'ultima colonna mi sposto di una cella a destra
+    return condizione_ricorsiva(matrice, i, j+1)

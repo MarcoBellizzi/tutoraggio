@@ -1,6 +1,6 @@
 ### LISTE ###
 
-# le liste sono un insieme ordinato di elementi.
+# le liste sono semplicemente un insieme ordinato di elementi.
 
 # creazione di una lista vuota.
 lista = []
@@ -51,23 +51,39 @@ lista.remove(5)
 print(lista)
 
 # il metodo pop() rimuove l'elemento alla posizione specificata.
-lista.pop(3)
+x = lista.pop(3)
+print(lista, '\n', 'elemento rimosso :', x)
+
+# il metodo sort() ordina una lista in maniera crescente o decrescente.
+lista.sort()
 print(lista)
 
+lista.sort(reverse=True)
+print(lista)
 
-### FOR ###
+# l'operatore in serve per chiedersi se un elemento appartiene ad una lista.
+if 5 in lista:
+    print('5 è presente nella lista')
+else:
+    print('5 non è presente nella lista')
 
 
-# il costrutto for serve per scorrere una lista e ripetere del codice per ogni elemento nella lista.
+### CICLO FOR ###
+
+
+# il costrutto for serve per scorrere una lista e eseguire del codice per ogni
+# elemento nella lista.
 # il codice che va ripetuto va messo con un tab di spazio dopo il for.
+
+# stampa di tutti gli elementi in una lista.
 lista = [1, 3, 4, 7]
 for elemento in lista:
     print(elemento)
 
 # notiamo che la funzione print() viene eseguita tante volte quanti sono gli elementi nella lista
-# e che la variabile elemento assume ogni volta un valore diverso.
+# e che la variabile 'elemento' assume ogni volta un valore diverso.
 
-# la funzione range() serve per creare una lista di valori da usare in un ciclo for.
+# la funzione range() serve per creare una lista di numeri da usare in un ciclo for.
 
 # creazione di numeri interi consecutivi a partire da 0 fino ad un valore specificato.
 for elemento in range(10):
@@ -90,7 +106,7 @@ for primo_elemento in range(3):
 # possiamo usare il len e il range per scorrere la lista attraverso gli indici
 lista = [1, 3, 4, 7]
 for i in range(len(lista)):
-    print("l' elemento in posizione", i, "è uguale a", lista[i])
+    print('l elemento in posizione', i, 'è uguale a', lista[i])
 
 
 ### WHILE ###
@@ -102,12 +118,12 @@ for i in range(len(lista)):
 # riempiamo una lista con numeri letti da input finche non leggiamo il numero -1.
 lista = []
 x = input()
-while x != -1:
+while x != '-1':
     lista.append(x)
     x = input()
 print(lista)
 
-# la key word break serve per uscire immediatamente da un ciclo (sia for che while).
+# la keyword break serve per uscire immediatamente da un ciclo (sia for che while).
 
 # stampiamo i numeri presenti in una lista finche non troviamo il numero -1.
 lista = [1, 2, 3, -1, 4, 5]

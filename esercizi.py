@@ -82,6 +82,15 @@ def verifica_lettere(parola1, parola2):
     return condizione
 
 
+# una funzione che stampi il numero delle vocali in una frase
+def stampa_numero_vocali(frase):
+    cont = 0
+    for lettera in frase:
+        if lettera == 'a' or lettera == 'e' or lettera == 'i' or lettera == 'o' or lettera == 'u':
+            cont += 1
+    print('il numero di vocali è', cont)
+
+
 # scrivere una funzione che ricevuta una lista di numeri verifichi se esistono 
 # due numeri vicini la cui somma è un numero pari
 def somma_vicini_pari(lista):
@@ -108,6 +117,20 @@ def lettera_più_frequente(parola):
     return char_max
 
 
+# una funzione che ricevute una parola e una lista di parole, verichi se tutte le lettere delle
+# prima parola compaiono almeno una volta in ogni parola nella lista
+
+# input : 'ab' , ['marco', 'francesco', 'python']
+
+def verifica_presenza_caratteri(parola, lista):
+    bol = True
+    for lettera in parola:
+        for parola2 in lista:
+            if lettera not in parola2:
+                bol = False
+    return bol
+
+
 ### ESERCIZI DIFFICILI - LEZIONE 5 e 6 ###
 
 
@@ -118,6 +141,16 @@ def stampa_matrice_al_contrario(matrice):
         for j in range(len(matrice[i]), -1, -1):
             print(matrice[i][j], end=" ")
         print()
+
+
+# scrivere una funzione che ricevuta una matrice di numeri, stampi la somma dei numeri pari
+def somma_numeri_pari(matrice):
+    somma = 0
+    for riga in matrice:
+        for elemento in riga:
+            if elemento % 2 == 0:
+                somma += elemento
+    print(somma)
 
 
 # scrivere una funzione che ricevuti due parametri R e C crei e ritorni 

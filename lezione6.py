@@ -3,7 +3,7 @@
 # la ricorsione è un processo in cui una funzione chiama se stessa.
 # all'interno di una funzione ricorsiva troviamo due elementi chiave:
 #   - il/i caso/i base: sono i casi in cui la catena di chiamate a se stessa si interrompe.
-#   - il/ caso/i ricorsivo/i: sono i casi in cui invece la catena non si interrompe e viene effettuata
+#   - il/i caso/i ricorsivo/i: sono i casi in cui invece la catena non si interrompe e viene effettuata
 #       una nuova chiamata.
 
 # facciamo un esempio di una funzione ricorsiva che stampi in maniera decrescente tutti i numeri

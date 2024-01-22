@@ -54,6 +54,9 @@ print(lista)
 x = lista.pop(3)
 print(lista, '\n', 'elemento rimosso :', x)
 
+index = lista.index(15)
+print('l\'indice dell\'elemento 15 è', index)
+
 # il metodo sort() ordina una lista in maniera crescente o decrescente.
 lista.sort()
 print(lista)

@@ -29,6 +29,7 @@ def fattoriale(n):
     if n == 2:
         return n
     # caso ricorsivo
-    return n * fattoriale(n-1)
+    value = n * fattoriale(n-1)
+    return value
 
 print(fattoriale(5))

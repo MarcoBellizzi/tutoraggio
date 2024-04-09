@@ -3,10 +3,11 @@
 using namespace std;
 
 
-// In c++ la gestione di liste e matrici nelle funzioni soffre di un vincolo : non 
-// è possibile recuperare la dimenzione di un array in una funzione (a meno che non si conosca gia
-// a tempo di compilazione). Si può comunque passare come parametro, però funziona solo con gli
-// array; con le matrici non è nemmeno possibile questo;
+// In c++ la gestione di liste e matrici nelle funzioni soffre di un vincolo,  non 
+// è possibile recuperare la dimenzione di un array in una funzione. 
+// Si può comunque passare come parametro, però funziona solo con gli
+// array; con le matrici non è nemmeno possibile questo (bisognerebbe 
+// specificare la dimensione delle colonne).
 
 
 void stampa_array(int array[], int n) {

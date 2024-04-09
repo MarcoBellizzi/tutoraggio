@@ -24,7 +24,13 @@ int main() {
 
     int n = 10;
 
-    // dichiarazione di un array
+    // dichiarazione di un array senza l'uso dei puntatori
+    // int array[n];
+
+    // dichiarazione di un puntatore che punta ad un intero
+    // int* p = new int;
+
+    // dichiarazione di un array con l'uso dei puntatori
     int* array = new int[n];
 
     // riempimento array
@@ -37,9 +43,12 @@ int main() {
 
     cout << endl;
 
+    // dichiarazione di una matrice senza l'uso dei puntatori
+    // int matrice[n][n];
 
-    // dichiarazione matrice
+    // dichiarazione di una matrice con l'uso dei puntatori
     int** matrice = new int*[n];
+
     for (int i=0; i<n; i++) {
         matrice[i] = new int[n];
     }

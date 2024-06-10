@@ -82,15 +82,6 @@ def verifica_lettere(parola1, parola2):
     return condizione
 
 
-# una funzione che stampi il numero delle vocali in una frase
-def stampa_numero_vocali(frase):
-    cont = 0
-    for lettera in frase:
-        if lettera == 'a' or lettera == 'e' or lettera == 'i' or lettera == 'o' or lettera == 'u':
-            cont += 1
-    print('il numero di vocali è', cont)
-
-
 # scrivere una funzione che ricevuta una lista di numeri verifichi se esistono 
 # due numeri vicini la cui somma è un numero pari
 def somma_vicini_pari(lista):

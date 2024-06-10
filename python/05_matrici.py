@@ -36,8 +36,8 @@ for indice in range(len(lista)):
     print(lista[indice])
 
 # possiamo quindi usare quest'altro approccio per scorrere gli elementi di una matrice.
-for i in range(len(matrice)):
-    for j in range(len(matrice[i])):
+for i in range(len(matrice)):  # scorre sulle righe
+    for j in range(len(matrice[i])):  # scorri le colonne
         print(matrice[i][j])
 
 # notiamo come l'indice i scorre sulle righe della matrice mentre l'indice j

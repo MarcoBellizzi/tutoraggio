@@ -67,8 +67,8 @@ print(5 <= 7)
 # il costrutto if serve per eseguire del codice solo se il valore booleano
 # presente all'interno dell'if è vero.
 # il codice che va eseguito se la condizione è vera va messo con un tab di spazio dopo l'if.
-if 5 > 3:
-    print('5 è maggiore di 3')
+if 1 > 3:
+    print('1 è maggiore di 3')
 
 if 8 < 2:
     print('8 minore di 2')

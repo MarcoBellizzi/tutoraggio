@@ -12,6 +12,6 @@ compilare poi il programma con il comando
 
 csc prova.cs
 
-ed eseguire lì'eseguibile
+ed eseguire l'eseguibile
 
 prova

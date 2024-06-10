@@ -2,7 +2,7 @@
 
 
 # le stringhe sono semplicemente delle variabili il cui contenuto è una sequenza di caratteri.
-x = "abracadabra"
+x = 'bracadabra'
 
 # possiamo vedere una stringa come una lista di caratteri (non si possono usare i metodi visti prima però).
 

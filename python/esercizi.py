@@ -168,6 +168,21 @@ def stampa_matrice_a_scacchiera(matrice):
                 print("  ", end=" ")
         print()
 
+# scrivere una funzione che stampi una matrice a spirale
+def stampa_spirale(matrice):
+    num_righe = len(matrice)
+    num_colonne = len(matrice[0])
+    for k in range((num_righe // 2) +1): # numero di cornici
+        for i in range(k, num_colonne -k): # riga in alto
+            print(matrice[k][i], ' ', end='')
+        for i in range(k +1, num_righe -k): # colonna a destra
+            print(matrice[i][num_colonne -k -1], ' ', end='')
+        for i in range(num_colonne -k -2, k -1, -1): # riga in basso
+            print(matrice[num_righe -k -1][i], ' ', end='')
+        for i in range(num_righe -k -2, k, -1): # colonna a sinistra
+            print(matrice[i][k], ' ', end='')
+        print()
+
 
 # scrivere una funzione che ricevuta una matrice verifichi se in ogni riga
 # ci sono tutti elementi diversi

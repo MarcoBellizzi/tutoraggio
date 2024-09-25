@@ -1,2 +1,1 @@
-# Repository usato per i tutoraggi di informatica in python e c++
-
+# Repository usato per i tutoraggi di informatica in python, c++ e c#

@@ -168,6 +168,7 @@ def stampa_matrice_a_scacchiera(matrice):
                 print("  ", end=" ")
         print()
 
+
 # scrivere una funzione che stampi una matrice a spirale
 def stampa_spirale(matrice):
     num_righe = len(matrice)
@@ -209,3 +210,4 @@ def condizione_ricorsiva(matrice, i, j):
         return condizione_ricorsiva(matrice, i+1, 0)
     # caso ricorsivo - se non sono sull'ultima colonna mi sposto di una cella a destra
     return condizione_ricorsiva(matrice, i, j+1)
+

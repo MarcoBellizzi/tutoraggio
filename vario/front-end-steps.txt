@@ -1,0 +1,27 @@
+Progetti web con angular e prime ng
+
+La compatibilità tra angular e prime ng segue le versioni: per ogni nuova versione 
+di angular, viene rilasciata una versione di primeng, dunque in un progetto angular 17
+si usa la versione di primeng 17.
+
+Angular dipende da node, e la compatibilità tra le versioni di angular e le versioni
+di node si possono vedere a questa pagina
+
+https://angular.dev/reference/versions
+
+per gestire le versioni di node si usa nvm
+
+nvm ls
+
+nvm install 20.9.0
+
+nvm use 20.9.0
+
+installare una versione specifica di angular
+
+npm uninstall -g @angular/cli
+
+npm install -g @angular/cli@wished.version.here
+
+seguire il sito di prime ng per installare la specifica versione
+

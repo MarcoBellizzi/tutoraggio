@@ -1,0 +1,23 @@
+appunti capcut
+
+- mostrare come si scarica
+
+- importare i file
+
+- tagliare i video gia dalla sezione in alto a sinistra
+
+- come default gli spazie vuoti (disattivare la calamita in alto a destra della timeline)
+
+- altro bottone e snapping automatico
+
+- gerarchia tra le tracce
+
+- il collegamento (unisce due tracce su due linee diverse)
+
+- tasti a sinistra per dividere, dividi ed elimina
+
+- differenza tra video solo video e video con audio (creare dissolvenza o deselezionare l audio)
+
+- inserire video, audio e testo gia su capcut
+
+- il testo accede alle impostazioni dalla barra a sinistra

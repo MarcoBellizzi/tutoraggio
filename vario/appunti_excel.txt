@@ -1,0 +1,18 @@
+strttura a righe e colonne
+regolare lo zoom
+inserire i numeri
+modificare il separatore (virgole e valori decimali)
+giocare con il formato (selezionare la colonna e andare su formato)
+aggiungere colonna note e nasconderla
+mostrare largezza colonne con doppio click su tra le due colonne
+mostrare come ridimenzionarle tutte (click in alto a destra e poi doppio click tra qualsiasi separatore di colonne
+aagiungere e rimuovere righe o colonne
+nascondere colonne
+spostare i dati da un altra parte passando il muose sul bordo
+cambiare posizione delle colonne tenendo premuto il tasto shift
+mostrare l inserimento di una tabella (inserisci tabella)
+se si clicca sulla tabella poi appare struttura tabellare
+selezionare le celle e home - formattazione condizionale
+somme e funzioni
+ordinare e filtrare le righe
+grafici
